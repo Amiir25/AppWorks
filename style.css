@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+:root {
+    --primary-color: #ff8801;
+}
+
+/*---------------- Navbar ----------------*/
+.navbar {
+    background: #111;
+    color: #ccc;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+    line-height: 18px;
+}
+
+.logo h1 {
+    font-weight: 600;
+}
+
+.works {
+    color: var(--primary-color);
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+}
+
+.navbar-menu {
+    /* display: none; */
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    transform: translateX(-100%);
+    background: linear-gradient(45deg, #eee, #eee, var(--primary-color), #eee, #eee);
+    color: #333;
+    transition: all .2s;
+}
+
+.navbar-menu.show {
+    display: flex;
+    transform: translateX(0);
+}
+
+.navbar-menu #navbar-close {
+    width: 100%;
+    text-align: right;
+}
+
+.navbar-menu .logo {
+    margin: 30px 0;
+}
+
+.navbar-list {
+    margin-left: 20px;
+    line-height: 40px;
+}
+
+.navbar-list li {
+    list-style: none;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.3em;
+}
+
+.navbar-list li:hover {
+    text-decoration: underline;
+}
+
+/*---------------------------------------------*/
+
+/*---------------- Hero ----------------*/
+.hero {
+    background: url(images/bg-small.jpg) center / cover no-repeat;
+}
+
+.hero-wrapper {
+    padding: 8rem 0 0;
+    background: rgba(0, 0, 0, .8);
+    color: #ddd;
+    text-align: center;
+}
+
+.hero-wrapper h2 {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.hero-wrapper p {
+    margin: 1em 0;
+    font-weight: lighter;
+    font-size: 1.2em;
+    padding: 0 0.6rem;
+}
+
+.explore-services {
+    margin: 2rem 0 0;
+    padding: 1rem 3rem;
+    font-size: 1.5em;
+    color: #ddd;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5em;
+}
+
+.get-started {
+    margin: 1rem 0 2rem;
+    padding: 1rem 5rem;
+    font-size: 1.5em;
+    color: #ddd;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5em;
+}
+
+.get-started:hover {
+    background: transparent;
+}
+
+.get-started:active {
+    background: transparent;
+}
+
+/*---------------------------------------------*/
+
+/*---------------- Our Services ----------------*/
+.our-services {
+    background: #111;
+    color: #ddd;
+    text-align: center;
+    margin-top: -1px;
+    padding: 4em 0.5em;
+}
+
+.our-services > h1 {
+    font-size: 2.5rem;
+}
+
+.service {
+    width: 80%;
+    margin: 2rem auto 0;
+    box-shadow: 0 0 10px var(--primary-color);
+    text-align: left;
+    padding: 0 0 0.5em;
+}
+
+.service-image {
+    position: relative;
+    height: 8rem;
+}
+
+.service-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.service-image .image-source {
+    position: absolute;
+    bottom: 0.2em;
+    right: 0.3em;
+    font-size: 0.5em;
+}
+
+.service-description {
+    margin: 0.5em 1em;
+}
+
+.service-description .title {
+    font-size: 1.8em;
+    line-height: 0.9em;
+    margin-bottom: 0.5em;
+}
