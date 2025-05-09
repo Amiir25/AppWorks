@@ -1,0 +1,162 @@
+/* Media Queries for AppWorks Website */
+
+:root {
+    --primary-color: #ff8801;
+    --bg-primary: #000608;
+    --text-primary: #ddd;
+}
+
+@media (min-width: 576px) {
+
+    /* -- Hero -- */
+    .hero-wrapper h2 {
+        font-size: 4em;
+    }
+
+    .hero-wrapper p {
+        font-size: 1.6em;
+    }
+
+    /* -- Main Titles */
+    .main-title {
+        font-size: 2.8rem;
+    }
+
+    /* -- Our Services --*/
+    .service-wrapper {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    /*-- Featured Projects --*/
+    .project {
+        width: 500px;
+    }
+
+    /*-- Footer --*/
+    .footer-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .footer-list ul {
+        width: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* Navbar */
+    #navbar-toggle,
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-links {
+        display: block !important;
+    }
+
+    .navbar-links ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navbar-links ul li {
+        list-style: none;
+    }
+
+    .navbar-links ul li a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .navbar-links ul li a:hover {
+        color: var(--primary-color);
+    }
+
+    /*-- Featured Projects --*/
+    .project-list {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .project {
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 1rem 10rem;
+    }
+
+    /* Hero */
+    .hero-wrapper p {
+        padding: 0 8rem;
+    }
+
+    /* Featured Projects */
+    .project {
+        width: 400px;
+    }
+
+    /* Client Voices */
+    .testimony {
+        width: 800px;
+        height: 300px;
+        flex-direction: row;
+        gap: 5rem;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .testimony .client-detail {
+        width: 300px;
+    }
+
+    .client-profile {
+        width: 150px;
+        height: 150px;
+    }
+
+    .testimony>p {
+        width: 500px;
+        height: 50%;
+        font-size: 1.2rem;
+    }
+
+    /* Call To Action */
+    .cta {
+        padding: 8rem 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cta-title {
+        width: 50%;
+        font-size: 50px;
+    }
+
+    /* All */
+    .hero-wrapper,
+    .about,
+    .our-services,
+    .featured-projects {
+        padding: 8rem;
+    }
+
+    .hide-on-mobile {
+        display: block !important;
+    }
+}
