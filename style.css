@@ -18,14 +18,14 @@ html {
 }
 
 body {
-    background: url(images/bg-primary.webp) center / cover no-repeat;
+    background: url(img/bg-primary.webp) center / cover no-repeat;
     background-attachment: fixed;
 
 }
 
 /*---------------- Navbar ----------------*/
 .header {
-    background: url(images/bg-small.webp) center / cover no-repeat;
+    background: url(img/bg-small.webp) center / cover no-repeat;
 }
 
 .navbar {
