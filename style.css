@@ -18,14 +18,14 @@ html {
 }
 
 body {
-    background: url(images/bg-primary.jpg) center / cover no-repeat;
-    background-attachment:fixed;
+    background: url(images/bg-primary.webp) center / cover no-repeat;
+    background-attachment: fixed;
 
 }
 
 /*---------------- Navbar ----------------*/
 .header {
-    background: url(images/bg-small.jpg) center / cover no-repeat;
+    background: url(images/bg-small.webp) center / cover no-repeat;
 }
 
 .navbar {
@@ -165,6 +165,7 @@ body {
     border: 1px solid var(--text-primary);
     opacity: 0.9;
 }
+
 /*---------------------------------------------*/
 
 /*---------------- Who are we? ----------------*/
@@ -349,6 +350,7 @@ body {
         transform: translate(-50%, -50%);
         opacity: 1;
     }
+
     100% {
         transform: translate(-150%, -50%);
         opacity: 0;
@@ -360,6 +362,7 @@ body {
         transform: translate(50%, -50%);
         opacity: 0;
     }
+
     100% {
         transform: translate(-50%, -50%);
         opacity: 1;
