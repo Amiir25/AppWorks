@@ -103,6 +103,12 @@
     /* Hero */
     .hero-wrapper p {
         padding: 0 8rem;
+        margin-bottom: 0;
+    }
+
+    /* About */
+    .about p {
+        padding: 0 8rem;
     }
 
     /* Featured Projects */
