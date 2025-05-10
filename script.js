@@ -68,4 +68,4 @@ const showNextCard = () => {
     }, 500);
 }
 
-setInterval(showNextCard, 3000);
+setInterval(showNextCard, 8000);
