@@ -51,6 +51,11 @@
 
 @media (min-width: 768px) {
 
+    /* Header */
+    .header {
+        background: url(img/bg-new.webp) bottom / cover no-repeat;
+    }
+
     /* Navbar */
     #navbar-toggle,
     .navbar-menu {
@@ -79,6 +84,26 @@
         color: var(--primary-color);
     }
 
+    /* Hero */
+    .hero {
+        background: rgba(0, 0, 0, .6);
+        /* border: 1px solid red; */
+    }
+
+    .hero-wrapper {
+        width: 800px;
+        background: none;
+        /* border: 1px solid blue; */
+    }
+
+    .hero-wrapper h2 {
+        font-size: 3em;
+    }
+
+    .hero-wrapper p {
+        font-size: 1.3em;
+    }
+
     /*-- Featured Projects --*/
     .project-list {
         display: flex;
@@ -102,7 +127,7 @@
 
     /* Hero */
     .hero-wrapper p {
-        padding: 0 8rem;
+        padding: 0 4rem;
         margin-bottom: 0;
     }
 
@@ -155,7 +180,6 @@
     }
 
     /* All */
-    .hero-wrapper,
     .about,
     .our-services,
     .featured-projects {
