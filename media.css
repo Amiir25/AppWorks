@@ -1,8 +1,9 @@
 /* Media Queries for AppWorks Website */
 
 :root {
-    --primary-color: #ff8801;
+    --primary-color: #ff014d;
     --bg-primary: #000608;
+    --bg-secondary: #c2c0c2;
     --text-primary: #ddd;
 }
 
