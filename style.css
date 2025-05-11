@@ -25,6 +25,7 @@ body {
 
 /*---------------- Navbar ----------------*/
 .header {
+    height: 100vh;
     background: url(img/bg-small.webp) center / cover no-repeat;
 }
 
@@ -114,9 +115,14 @@ body {
 /*---------------------------------------------*/
 
 /*---------------- Hero ----------------*/
-.hero-wrapper {
-    padding: 8rem 0 0;
+.hero {
+    height: 100%;
     background: rgba(0, 0, 0, .6);
+}
+
+.hero-wrapper {
+    /* height: 100vh; */
+    padding: 8rem 0 0;
     color: var(--text-primary);
     text-align: center;
 }
@@ -133,6 +139,14 @@ body {
     padding: 0 0.6rem;
 }
 
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 2rem auto;
+}
+
+
 .explore-services {
     margin: 2rem 0 0;
     padding: 1rem 3rem;
@@ -141,13 +155,6 @@ body {
     background: transparent;
     border: 1px solid var(--primary-color);
     border-radius: 0.5em;
-}
-
-.hero-buttons {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: auto;
 }
 
 .get-started {
@@ -173,7 +180,7 @@ body {
     background: var(--bg-secondary);
     color: var(--text-primary);
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 10rem 1rem 2rem;
 }
 
 .about p {
