@@ -177,7 +177,8 @@
 
 /*------------------- Extra Large Screen -------------------*/
 @media (min-width: 1200px) {
-        /* Header */
+
+    /* Header */
     .header {
         background: url(img/bg-try.webp) center / cover no-repeat;
     }
