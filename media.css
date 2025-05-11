@@ -6,6 +6,7 @@
     --text-primary: #ddd;
 }
 
+/*------------------- Small Screen -------------------*/
 @media (min-width: 576px) {
 
     /* -- Hero -- */
@@ -15,6 +16,18 @@
 
     .hero-wrapper p {
         font-size: 1.6em;
+    }
+
+    .hero-buttons {
+        width: inherit;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .hero-buttons button {
+        margin: 0;
     }
 
     /* -- Main Titles */
@@ -49,12 +62,8 @@
     }
 }
 
+/*------------------- Medium Screen -------------------*/
 @media (min-width: 768px) {
-
-    /* Header */
-    .header {
-        background: url(img/bg-new.webp) bottom / cover no-repeat;
-    }
 
     /* Navbar */
     #navbar-toggle,
@@ -84,26 +93,6 @@
         color: var(--primary-color);
     }
 
-    /* Hero */
-    .hero {
-        background: rgba(0, 0, 0, .6);
-        /* border: 1px solid red; */
-    }
-
-    .hero-wrapper {
-        width: 800px;
-        background: none;
-        /* border: 1px solid blue; */
-    }
-
-    .hero-wrapper h2 {
-        font-size: 3em;
-    }
-
-    .hero-wrapper p {
-        font-size: 1.3em;
-    }
-
     /*-- Featured Projects --*/
     .project-list {
         display: flex;
@@ -116,19 +105,18 @@
     .project {
         width: 300px;
     }
+
+    .hide-on-mobile {
+        display: block !important;
+    }
 }
 
+/*------------------- Large Screen -------------------*/
 @media (min-width: 992px) {
 
     /* Navbar */
     .navbar {
         padding: 1rem 10rem;
-    }
-
-    /* Hero */
-    .hero-wrapper p {
-        padding: 0 4rem;
-        margin-bottom: 0;
     }
 
     /* About */
@@ -185,8 +173,37 @@
     .featured-projects {
         padding: 8rem;
     }
+}
 
-    .hide-on-mobile {
-        display: block !important;
+/*------------------- Extra Large Screen -------------------*/
+@media (min-width: 1200px) {
+        /* Header */
+    .header {
+        background: url(img/bg-try.webp) center / cover no-repeat;
+    }
+
+    /* Hero */
+    .hero {
+        background: linear-gradient(90deg,
+                rgba(0, 0, 0, 1),
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.0),
+                rgba(0, 0, 0, 0));
+    }
+
+    .hero-wrapper {
+        width: 800px;
+        background: none;
+    }
+
+    .hero-wrapper h2 {
+        font-size: 3em;
+    }
+
+    .hero-wrapper p {
+        font-size: 1.3em;
+        padding: 0 4rem;
+        margin-bottom: 0;
     }
 }
