@@ -418,6 +418,7 @@ body {
 
 .footer-list ul {
     margin: 1rem 0;
+    width: 300px;
 }
 
 .list-item {
@@ -436,6 +437,10 @@ body {
 
 .list-item a:hover {
     text-decoration: underline;
+}
+
+.contacts {
+    margin: 20rem;
 }
 
 .contact-list {
