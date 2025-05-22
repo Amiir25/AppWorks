@@ -58,7 +58,7 @@ body {
     text-decoration-color: var(--primary-color);
 }
 
-/*-- Navbar toogle --*/
+/*-- Navbar toogler --*/
 .navbar-menu {
     /* display: none; */
     flex-direction: column;
@@ -66,15 +66,12 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 50%;
     height: 100vh;
     transform: translateX(-100%);
-    background: linear-gradient(45deg,
-            var(--bg-primary),
-            var(--bg-primary),
-            var(--primary-color),
-            var(--bg-primary),
-            var(--bg-primary));
+    background: rgba(0, 0, 0, 0.3); /* semi-transparent background */
+    backdrop-filter: blur(15px);        /* blur effect */
+    -webkit-backdrop-filter: blur(10px);
     color: var(--text-primary);
     transition: all .2s;
 }
@@ -407,18 +404,12 @@ body {
 
 /*---------------- Footer ----------------*/
 .footer {
-    background: linear-gradient(45deg,
-            var(--bg-primary),
-            var(--bg-primary),
-            var(--primary-color),
-            var(--bg-primary),
-            var(--bg-primary));
     color: var(--text-primary);
 }
 
 .footer-wrapper {
     padding: 2rem 1rem 0.5rem;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .9);
 }
 
 .footer-wrapper .logo {
