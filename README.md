@@ -1,9 +1,7 @@
 ## AppWorks - Responsive Landing Page  
 A fully responsive landing page for a fictional tech company called AppWorks, built using **HTML**, **CSS**, and **JavaScript**. This project was created to practice front-end development fundamentals and responsive design using a mobile-first approach.
 
-Live Demo
-View the live site
-View the source code on GitHub
+**Live Demo**: [View the live site](https://amiir25.github.io/AppWorks/)
 
 ## Tech Stack  
 - HTML5
